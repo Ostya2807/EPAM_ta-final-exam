@@ -66,12 +66,3 @@ This project contains automated UI tests for the login functionality of [SauceDe
 | Chrome/Edge  | Target browsers          |
 
 ---
-
-## 🚀 How to Run
-
-```bash
-# Clean and run tests on Chrome
-mvn clean test -Dbrowser=chrome
-
-# Run on Edge
-mvn clean test -Dbrowser=edge
