@@ -81,10 +81,10 @@ public class UserAccessTests extends CommonConditions{
                     errorMsg.contains("locked out") ||
                             errorMsg.contains("Username is required") ||
                             errorMsg.contains("Password is required"),
-                    "Váratlan hibaüzenet: " + errorMsg
+                    "Unwanted error message : " + errorMsg
             );
         } else {
-            Assert.assertEquals(mainPage.getLoggedInTitle(), "Swag Labs", "Nem sikerült bejelentkezni: " + user.getUsername());
+            Assert.assertEquals(mainPage.getLoggedInTitle(), "Swag Labs", "Failed to login: " + user.getUsername());
         }
     }
 }
